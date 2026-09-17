@@ -1711,19 +1711,11 @@ document.getElementById("app").addEventListener("input", (event) => {
 });
 
 if ("serviceWorker" in navigator) {
-  const build = "18";
-  if (localStorage.getItem("mygrowth.build") !== build) {
-    localStorage.setItem("mygrowth.build", build);
-    Promise.all([
-      caches.keys().then((keys) => Promise.all(keys.map((key) => caches.delete(key)))),
-      navigator.serviceWorker.getRegistrations().then((regs) => Promise.all(regs.map((reg) => reg.unregister()))),
-    ]).then(() => {
-      const url = new URL(location.href);
-      url.searchParams.set("v", build);
-      location.replace(url.toString());
-    }).catch(() => {});
-  } else {
-    navigator.serviceWorker.register("./sw.js?v=18").catch(() => {});
+  navigator.serviceWorker.getRegistrations().then((regs) => {
+    regs.forEach((reg) => reg.unregister());
+  });
+  if (window.caches) {
+    caches.keys().then((keys) => keys.forEach((key) => caches.delete(key)));
   }
 }
 

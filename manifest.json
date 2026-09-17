@@ -2,7 +2,7 @@
   "name": "MY GROWTH",
   "short_name": "MY GROWTH",
   "description": "Scheda palestra, progressi e movimento di Federica",
-  "start_url": "./?v=18",
+  "start_url": "./oggi.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
