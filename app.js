@@ -183,7 +183,17 @@ function defaultNutrition() {
 }
 
 function nutrition() {
-  return { ...defaultNutrition(), ...(state.nutrition || {}) };
+  return cleanNutrition(state.nutrition);
+}
+
+function cleanNutrition(raw) {
+  const n = { ...defaultNutrition(), ...(raw || {}) };
+  n.chat = (n.chat || []).filter((msg) => {
+    const text = String(msg.text || "").toLowerCase();
+    return !text.includes("esempio") && !text.includes("spuntino");
+  });
+  if (!n.chat.length) n.chat = defaultNutrition().chat;
+  return n;
 }
 
 function todayMeals() {
@@ -541,7 +551,7 @@ function loadState() {
       },
       events: Array.isArray(parsed.events) ? parsed.events : [],
       hiddenCalUids: Array.isArray(parsed.hiddenCalUids) ? parsed.hiddenCalUids : [],
-      nutrition: { ...defaultNutrition(), ...(parsed.nutrition || {}) },
+      nutrition: cleanNutrition(parsed.nutrition),
     };
     return moveTodaysWalkToTuesday(data);
   } catch {
@@ -1333,7 +1343,7 @@ function renderExtraForm() {
       <label for="mov-min">Minuti</label>
       <input id="mov-min" type="number" inputmode="numeric" min="1" step="5" placeholder="es. 30" />
     </div>
-    <p class="muted" data-kcal-live style="margin-bottom:12px">Esempio: 30 min di ${esc(ui.moveType)} ≈ ${preview} kcal</p>
+    <p class="muted" data-kcal-live style="margin-bottom:12px">30 min di ${esc(ui.moveType)} ≈ ${preview} kcal</p>
     <div class="field">
       <label for="mov-note">Nota, se vuoi</label>
       <textarea id="mov-note" placeholder="es. passeggiata al parco"></textarea>
@@ -1701,7 +1711,20 @@ document.getElementById("app").addEventListener("input", (event) => {
 });
 
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("./sw.js?v=17").catch(() => {});
+  const build = "18";
+  if (localStorage.getItem("mygrowth.build") !== build) {
+    localStorage.setItem("mygrowth.build", build);
+    Promise.all([
+      caches.keys().then((keys) => Promise.all(keys.map((key) => caches.delete(key)))),
+      navigator.serviceWorker.getRegistrations().then((regs) => Promise.all(regs.map((reg) => reg.unregister()))),
+    ]).then(() => {
+      const url = new URL(location.href);
+      url.searchParams.set("v", build);
+      location.replace(url.toString());
+    }).catch(() => {});
+  } else {
+    navigator.serviceWorker.register("./sw.js?v=18").catch(() => {});
+  }
 }
 
 applyLook();

@@ -1,4 +1,4 @@
-const CACHE = "mygrowth-v14";
+const CACHE = "mygrowth-v18";
 
 self.addEventListener("install", (event) => {
   self.skipWaiting();
