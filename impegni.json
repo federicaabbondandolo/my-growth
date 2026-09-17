@@ -1,0 +1,38 @@
+[
+  {
+    "calendar": "Date da Ricordare",
+    "title": "psicologa",
+    "date": "2026-09-22",
+    "start": "19:00",
+    "end": "20:00",
+    "note": "",
+    "calUid": "Date da Ricordare|2026-09-22|19:00|psicologa"
+  },
+  {
+    "calendar": "Lavoro",
+    "title": "Hostess",
+    "date": "2026-09-24",
+    "start": "19:30",
+    "end": "00:30",
+    "note": "",
+    "calUid": "Lavoro|2026-09-24|19:30|Hostess"
+  },
+  {
+    "calendar": "Appuntamenti",
+    "title": "Unghie",
+    "date": "2026-10-05",
+    "start": "19:00",
+    "end": "20:00",
+    "note": "",
+    "calUid": "Appuntamenti|2026-10-05|19:00|Unghie"
+  },
+  {
+    "calendar": "Appuntamenti",
+    "title": "Unghie Ricostruzione",
+    "date": "2026-12-10",
+    "start": "19:00",
+    "end": "22:00",
+    "note": "",
+    "calUid": "Appuntamenti|2026-12-10|19:00|Unghie Ricostruzione"
+  }
+]

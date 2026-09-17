@@ -1,0 +1,17 @@
+{
+  "name": "MY GROWTH",
+  "short_name": "MY GROWTH",
+  "description": "Scheda palestra, progressi e movimento di Federica",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#5f171a",
+  "theme_color": "#5f171a",
+  "lang": "it",
+  "icons": [
+    { "src": "./icons/icon-192.png?v=10", "sizes": "192x192", "type": "image/png" },
+    { "src": "./icons/icon-512.png?v=10", "sizes": "512x512", "type": "image/png" },
+    { "src": "./icons/icon-maskable.png?v=10", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
