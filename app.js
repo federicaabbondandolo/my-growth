@@ -71,56 +71,56 @@ const MOVE_MET = {
 };
 
 const FOODS = [
-  { name: "pasta", aliases: ["pasta", "spaghetti", "penne", "fusilli", "rigatoni"], kcal: 350, p: 13, portion: 80 },
-  { name: "riso", aliases: ["riso", "basmati"], kcal: 350, p: 7, portion: 70 },
-  { name: "pane", aliases: ["pane", "focaccia"], kcal: 270, p: 9, portion: 50 },
-  { name: "pizza", aliases: ["pizza", "pizzetta"], kcal: 270, p: 11, portion: 250 },
-  { name: "gnocchi", aliases: ["gnocchi"], kcal: 130, p: 4, portion: 200 },
-  { name: "avena", aliases: ["avena", "porridge"], kcal: 370, p: 13, portion: 40 },
-  { name: "olio", aliases: ["olio", "olio evo"], kcal: 884, p: 0, portion: 10 },
-  { name: "burro", aliases: ["burro"], kcal: 717, p: 1, portion: 10 },
-  { name: "uovo", aliases: ["uovo", "uova"], kcal: 143, p: 13, portion: 60 },
-  { name: "yogurt greco", aliases: ["yogurt greco", "greco"], kcal: 97, p: 9, portion: 150 },
-  { name: "yogurt", aliases: ["yogurt"], kcal: 63, p: 4, portion: 125 },
-  { name: "mozzarella", aliases: ["mozzarella", "fior di latte"], kcal: 253, p: 18, portion: 100 },
-  { name: "parmigiano", aliases: ["parmigiano", "grana"], kcal: 392, p: 33, portion: 20 },
-  { name: "ricotta", aliases: ["ricotta"], kcal: 146, p: 11, portion: 100 },
-  { name: "feta", aliases: ["feta"], kcal: 264, p: 14, portion: 40 },
-  { name: "latte", aliases: ["latte"], kcal: 46, p: 3, portion: 200 },
-  { name: "pollo", aliases: ["pollo", "petti di pollo", "petto di pollo"], kcal: 165, p: 31, portion: 150 },
-  { name: "tacchino", aliases: ["tacchino"], kcal: 135, p: 29, portion: 120 },
-  { name: "manzo", aliases: ["manzo", "carne", "bistecca"], kcal: 250, p: 26, portion: 150 },
-  { name: "salmone", aliases: ["salmone"], kcal: 208, p: 20, portion: 130 },
-  { name: "tonno", aliases: ["tonno"], kcal: 132, p: 29, portion: 80 },
-  { name: "pesce", aliases: ["pesce", "orata", "branzino", "merluzzo"], kcal: 120, p: 20, portion: 150 },
-  { name: "bresaola", aliases: ["bresaola"], kcal: 151, p: 32, portion: 50 },
-  { name: "prosciutto", aliases: ["prosciutto", "crudo"], kcal: 220, p: 26, portion: 50 },
-  { name: "ceci", aliases: ["ceci"], kcal: 164, p: 9, portion: 150 },
-  { name: "lenticchie", aliases: ["lenticchie"], kcal: 116, p: 9, portion: 150 },
-  { name: "hummus", aliases: ["hummus", "humus"], kcal: 237, p: 8, portion: 50 },
-  { name: "mela", aliases: ["mela", "mele"], kcal: 52, p: 0, portion: 180 },
-  { name: "banana", aliases: ["banana", "banane"], kcal: 89, p: 1, portion: 120 },
-  { name: "frutta", aliases: ["frutta", "pera", "arancia", "kiwi"], kcal: 50, p: 1, portion: 150 },
-  { name: "insalata", aliases: ["insalata", "verdura", "verdure", "insalatona"], kcal: 18, p: 1, portion: 150 },
-  { name: "zucchine", aliases: ["zucchine", "zucchina"], kcal: 17, p: 1, portion: 200 },
-  { name: "pomodori", aliases: ["pomodori", "pomodoro", "pomodorini"], kcal: 18, p: 1, portion: 150 },
-  { name: "broccoli", aliases: ["broccoli", "broccolo"], kcal: 34, p: 3, portion: 150 },
-  { name: "avocado", aliases: ["avocado"], kcal: 160, p: 2, portion: 70 },
-  { name: "patate", aliases: ["patate", "patata"], kcal: 77, p: 2, portion: 200 },
-  { name: "patatine", aliases: ["patatine"], kcal: 536, p: 7, portion: 80 },
-  { name: "cioccolato", aliases: ["cioccolato", "cioccolata"], kcal: 546, p: 5, portion: 20 },
-  { name: "gelato", aliases: ["gelato"], kcal: 200, p: 4, portion: 100 },
-  { name: "brioche", aliases: ["brioche", "cornetto"], kcal: 406, p: 8, portion: 60 },
-  { name: "miele", aliases: ["miele"], kcal: 304, p: 0, portion: 15 },
-  { name: "zucchero", aliases: ["zucchero"], kcal: 387, p: 0, portion: 5 },
-  { name: "vino", aliases: ["vino"], kcal: 85, p: 0, portion: 125 },
-  { name: "birra", aliases: ["birra"], kcal: 43, p: 0, portion: 330 },
-  { name: "cappuccino", aliases: ["cappuccino"], kcal: 54, p: 3, portion: 150 },
-  { name: "caffè", aliases: ["caffe", "caffè"], kcal: 2, p: 0, portion: 30 },
-  { name: "sugo", aliases: ["sugo", "pomodoro sugo"], kcal: 70, p: 2, portion: 80 },
-  { name: "lasagna", aliases: ["lasagna", "lasagne"], kcal: 160, p: 8, portion: 250 },
-  { name: "hamburger", aliases: ["hamburger", "burger"], kcal: 265, p: 15, portion: 180 },
-  { name: "sushi", aliases: ["sushi"], kcal: 150, p: 6, portion: 200 },
+  { name: "pasta", aliases: ["pasta", "spaghetti", "penne", "fusilli", "rigatoni"], kcal: 350, p: 13, c: 70, portion: 80 },
+  { name: "riso", aliases: ["riso", "basmati"], kcal: 350, p: 7, c: 77, portion: 70 },
+  { name: "pane", aliases: ["pane", "focaccia"], kcal: 270, p: 9, c: 50, portion: 50 },
+  { name: "pizza", aliases: ["pizza", "pizzetta"], kcal: 270, p: 11, c: 33, portion: 250 },
+  { name: "gnocchi", aliases: ["gnocchi"], kcal: 130, p: 4, c: 27, portion: 200 },
+  { name: "avena", aliases: ["avena", "porridge"], kcal: 370, p: 13, c: 60, portion: 40 },
+  { name: "olio", aliases: ["olio", "olio evo"], kcal: 884, p: 0, c: 0, portion: 10 },
+  { name: "burro", aliases: ["burro"], kcal: 717, p: 1, c: 0, portion: 10 },
+  { name: "uovo", aliases: ["uovo", "uova"], kcal: 143, p: 13, c: 1, portion: 60 },
+  { name: "yogurt greco", aliases: ["yogurt greco", "greco"], kcal: 97, p: 9, c: 4, portion: 150 },
+  { name: "yogurt", aliases: ["yogurt"], kcal: 63, p: 4, c: 7, portion: 125 },
+  { name: "mozzarella", aliases: ["mozzarella", "fior di latte"], kcal: 253, p: 18, c: 2, portion: 100 },
+  { name: "parmigiano", aliases: ["parmigiano", "grana"], kcal: 392, p: 33, c: 0, portion: 20 },
+  { name: "ricotta", aliases: ["ricotta"], kcal: 146, p: 11, c: 3, portion: 100 },
+  { name: "feta", aliases: ["feta"], kcal: 264, p: 14, c: 4, portion: 40 },
+  { name: "latte", aliases: ["latte"], kcal: 46, p: 3, c: 5, portion: 200 },
+  { name: "pollo", aliases: ["pollo", "petti di pollo", "petto di pollo"], kcal: 165, p: 31, c: 0, portion: 150 },
+  { name: "tacchino", aliases: ["tacchino"], kcal: 135, p: 29, c: 0, portion: 120 },
+  { name: "manzo", aliases: ["manzo", "carne", "bistecca"], kcal: 250, p: 26, c: 0, portion: 150 },
+  { name: "salmone", aliases: ["salmone"], kcal: 208, p: 20, c: 0, portion: 130 },
+  { name: "tonno", aliases: ["tonno"], kcal: 132, p: 29, c: 0, portion: 80 },
+  { name: "pesce", aliases: ["pesce", "orata", "branzino", "merluzzo"], kcal: 120, p: 20, c: 0, portion: 150 },
+  { name: "bresaola", aliases: ["bresaola"], kcal: 151, p: 32, c: 0, portion: 50 },
+  { name: "prosciutto", aliases: ["prosciutto", "crudo"], kcal: 220, p: 26, c: 1, portion: 50 },
+  { name: "ceci", aliases: ["ceci"], kcal: 164, p: 9, c: 27, portion: 150 },
+  { name: "lenticchie", aliases: ["lenticchie"], kcal: 116, p: 9, c: 20, portion: 150 },
+  { name: "hummus", aliases: ["hummus", "humus"], kcal: 237, p: 8, c: 14, portion: 50 },
+  { name: "mela", aliases: ["mela", "mele"], kcal: 52, p: 0, c: 14, portion: 180 },
+  { name: "banana", aliases: ["banana", "banane"], kcal: 89, p: 1, c: 23, portion: 120 },
+  { name: "frutta", aliases: ["frutta", "pera", "arancia", "kiwi"], kcal: 50, p: 1, c: 12, portion: 150 },
+  { name: "insalata", aliases: ["insalata", "verdura", "verdure", "insalatona"], kcal: 18, p: 1, c: 2, portion: 150 },
+  { name: "zucchine", aliases: ["zucchine", "zucchina"], kcal: 17, p: 1, c: 3, portion: 200 },
+  { name: "pomodori", aliases: ["pomodori", "pomodoro", "pomodorini"], kcal: 18, p: 1, c: 4, portion: 150 },
+  { name: "broccoli", aliases: ["broccoli", "broccolo"], kcal: 34, p: 3, c: 7, portion: 150 },
+  { name: "avocado", aliases: ["avocado"], kcal: 160, p: 2, c: 9, portion: 70 },
+  { name: "patate", aliases: ["patate", "patata"], kcal: 77, p: 2, c: 17, portion: 200 },
+  { name: "patatine", aliases: ["patatine"], kcal: 536, p: 7, c: 53, portion: 80 },
+  { name: "cioccolato", aliases: ["cioccolato", "cioccolata"], kcal: 546, p: 5, c: 60, portion: 20 },
+  { name: "gelato", aliases: ["gelato"], kcal: 200, p: 4, c: 24, portion: 100 },
+  { name: "brioche", aliases: ["brioche", "cornetto"], kcal: 406, p: 8, c: 45, portion: 60 },
+  { name: "miele", aliases: ["miele"], kcal: 304, p: 0, c: 82, portion: 15 },
+  { name: "zucchero", aliases: ["zucchero"], kcal: 387, p: 0, c: 100, portion: 5 },
+  { name: "vino", aliases: ["vino"], kcal: 85, p: 0, c: 3, portion: 125 },
+  { name: "birra", aliases: ["birra"], kcal: 43, p: 0, c: 4, portion: 330 },
+  { name: "cappuccino", aliases: ["cappuccino"], kcal: 54, p: 3, c: 5, portion: 150 },
+  { name: "caffè", aliases: ["caffe", "caffè"], kcal: 2, p: 0, c: 0, portion: 30 },
+  { name: "sugo", aliases: ["sugo", "pomodoro sugo"], kcal: 70, p: 2, c: 8, portion: 80 },
+  { name: "lasagna", aliases: ["lasagna", "lasagne"], kcal: 160, p: 8, c: 15, portion: 250 },
+  { name: "hamburger", aliases: ["hamburger", "burger"], kcal: 265, p: 15, c: 24, portion: 180 },
+  { name: "sushi", aliases: ["sushi"], kcal: 150, p: 6, c: 21, portion: 200 },
 ];
 
 function parseISO(iso) {
@@ -177,7 +177,7 @@ function defaultNutrition() {
     meals: [],
     chat: [{
       role: "app",
-      text: "Scrivi quello che hai mangiato, con le quantità. Esempio: 80g pasta, 100g pollo, un’insalata, un cucchiaio d’olio.",
+      text: "Scegli colazione, pranzo o cena e scrivi cosa hai mangiato, con le quantità: 80g pasta, 100g pollo, un’insalata.",
     }],
   };
 }
@@ -196,6 +196,37 @@ function todayFoodKcal() {
 
 function todayProtein() {
   return todayMeals().reduce((sum, item) => sum + Number(item.protein || 0), 0);
+}
+
+function todayCarbs() {
+  return todayMeals().reduce((sum, item) => sum + Number(item.carbs || 0), 0);
+}
+
+function proteinTarget() {
+  const kg = weightKg();
+  const goal = nutrition().goal;
+  if (goal === "dimagrire") return Math.round(kg * 1.8);
+  if (goal === "mantenere") return Math.round(kg * 1.4);
+  return Math.round(kg * 1.7);
+}
+
+function carbTarget() {
+  const kg = weightKg();
+  const goal = nutrition().goal;
+  if (goal === "dimagrire") return Math.round(kg * 2.5);
+  if (goal === "mantenere") return Math.round(kg * 4);
+  return Math.round(kg * 3.5);
+}
+
+function defaultMealSlot() {
+  const hour = new Date().getHours();
+  if (hour < 11) return "colazione";
+  if (hour < 16) return "pranzo";
+  return "cena";
+}
+
+function mealsForSlot(slot) {
+  return todayMeals().filter((item) => (item.slot || "pranzo") === slot);
 }
 
 function tdeeKcal() {
@@ -248,20 +279,23 @@ function parseFoodText(text) {
     const grams = Math.max(5, Math.round(parseQuantity(part, food)));
     const kcalItem = Math.round(food.kcal * (grams / 100));
     const protein = Math.round(food.p * (grams / 100));
+    const carbs = Math.round((food.c || 0) * (grams / 100));
     items.push({
       name: food.name,
       grams,
       kcal: kcalItem,
       protein,
+      carbs,
       label: `${food.name} (${grams}g)`,
     });
   }
   return { items, unknown };
 }
 
-function nutritionAdvice(eaten, protein) {
+function nutritionAdvice(eaten, protein, carbs) {
   const target = tdeeKcal();
-  const needP = Math.round(weightKg() * 1.6);
+  const needP = proteinTarget();
+  const needC = carbTarget();
   const goal = nutrition().goal;
   const bits = [];
   if (target) {
@@ -270,13 +304,15 @@ function nutritionAdvice(eaten, protein) {
     else if (eaten < target - 350) bits.push("Sei un po’ bassa di calorie: intorno all’allenamento aumenta pasta, riso o frutta.");
     else bits.push("Sei in una zona buona rispetto al fabbisogno.");
   } else {
-    bits.push(`Oggi ${eaten} kcal. Completa altezza ed età sopra, così stimo il fabbisogno.`);
+    bits.push(`Oggi ${eaten} kcal. Completa altezza ed età sopra, così stimo anche le kcal.`);
   }
-  if (protein < needP - 10) bits.push(`Proteine ${protein}g: meglio avvicinarti a ${needP}g (uova, yogurt greco, pollo, bresaola, pesce).`);
-  else bits.push(`Proteine ${protein}g: ok.`);
+  bits.push(`Proteine: ${protein}g mangiate su ${needP}g.`);
+  bits.push(`Carboidrati: ${carbs}g mangiati su ${needC}g.`);
+  if (protein < needP - 10) bits.push("Aumenta proteine: uova, yogurt greco, pollo, bresaola, pesce.");
+  if (carbs < needC - 20) bits.push("Aumenta carboidrati: pasta, riso, frutta, patate, soprattutto vicino alla sala.");
+  if (carbs > needC + 40) bits.push("Carboidrati alti: togli pane extra, dolci, alcol.");
   if (goal === "dimagrire") bits.push("Per dimagrire tieni l’olio a un cucchiaio a pasto e riempi il piatto di verdure.");
   if (goal === "ricomposizione") bits.push("Per ricomposizione: proteine ad ogni pasto, carboidrati soprattutto vicino alla sala.");
-  bits.push("Da aumentare: verdure, acqua, proteine magre. Da evitare spesso: salse cremose, aperitivo, spuntini senza fame.");
   return bits.join(" ");
 }
 
@@ -290,7 +326,7 @@ function sendFoodChat() {
   if (summary) {
     state.nutrition.chat.push({
       role: "app",
-      text: nutritionAdvice(todayFoodKcal(), todayProtein()),
+      text: nutritionAdvice(todayFoodKcal(), todayProtein(), todayCarbs()),
     });
     saveState();
     render();
@@ -302,7 +338,7 @@ function sendFoodChat() {
       role: "app",
       text: parsed.unknown.length
         ? `Non ho in elenco: ${parsed.unknown.join(", ")}. Prova con 80g pasta, 1 uovo, un yogurt, 100g pollo.`
-        : "Scrivi alimento e quantità. Esempio: 80g pasta, 100g pollo, un’insalata.",
+        : "Scrivi alimento e quantità: 80g pasta, 100g pollo, un’insalata.",
     });
     saveState();
     render();
@@ -310,19 +346,23 @@ function sendFoodChat() {
   }
   const kcalTot = parsed.items.reduce((sum, item) => sum + item.kcal, 0);
   const proteinTot = parsed.items.reduce((sum, item) => sum + item.protein, 0);
+  const carbsTot = parsed.items.reduce((sum, item) => sum + item.carbs, 0);
+  const slot = ui.mealSlot || defaultMealSlot();
   state.nutrition.meals.push({
     id: uid(),
     date: todayISO(),
+    slot,
     text,
     items: parsed.items,
     kcal: kcalTot,
     protein: proteinTot,
+    carbs: carbsTot,
   });
   const extra = parsed.unknown.length ? ` Non ho contato: ${parsed.unknown.join(", ")}.` : "";
   const lines = parsed.items.map((item) => `${item.label}: ${item.kcal} kcal`).join(" · ");
   state.nutrition.chat.push({
     role: "app",
-    text: `${lines}. Pasto ${kcalTot} kcal.${extra} ${nutritionAdvice(todayFoodKcal(), todayProtein())}`,
+    text: `${slot}: ${lines}. Pasto ${kcalTot} kcal · ${proteinTot}g proteine · ${carbsTot}g carboidrati.${extra} ${nutritionAdvice(todayFoodKcal(), todayProtein(), todayCarbs())}`,
   });
   saveState();
   render();
@@ -623,6 +663,7 @@ const ui = {
   agendaForm: false,
   agendaEdit: null,
   foodDraft: "",
+  mealSlot: defaultMealSlot(),
   look: loadLook(),
 };
 
@@ -1305,10 +1346,33 @@ function renderExtra() {
   return renderMovimento();
 }
 
+function renderMealSlot(slot, label) {
+  const list = mealsForSlot(slot);
+  return `
+    <h2 class="agenda-title">${label}</h2>
+    ${list.length ? list.map((item) => `
+      <article class="card">
+        <div class="row">
+          <div>
+            <h3>${esc(item.text)}</h3>
+            <p class="muted">${item.kcal} kcal · ${item.protein || 0}g proteine · ${item.carbs || 0}g carboidrati</p>
+          </div>
+          <button class="btn ghost danger" style="min-height:40px;padding:0 10px" data-act="del-meal" data-id="${esc(item.id)}">Togli</button>
+        </div>
+      </article>
+    `).join("") : `<p class="muted">Ancora niente.</p>`}
+  `;
+}
+
 function renderAlimentazione() {
   const n = nutrition();
   const target = tdeeKcal();
   const eaten = todayFoodKcal();
+  const haveP = todayProtein();
+  const needP = proteinTarget();
+  const haveC = todayCarbs();
+  const needC = carbTarget();
+  if (!ui.mealSlot) ui.mealSlot = defaultMealSlot();
   return `
     ${ui.toast ? `<div class="toast">${esc(ui.toast)}</div>` : ""}
     <div class="top">
@@ -1316,11 +1380,21 @@ function renderAlimentazione() {
       <div class="eye">cosa mangio</div>
     </div>
     <h1>Alimentazione</h1>
-    <p class="lede">I tuoi numeri, poi la chat: scrivi il pasto, io conto le calorie e ti dico cosa tenere e cosa tagliare.</p>
+    <p class="lede">Scegli il pasto, scrivi cosa hai mangiato. Io conto proteine e carboidrati.</p>
     <div class="stats" style="margin-top:18px">
       <div><strong>${eaten}</strong><span>kcal oggi</span></div>
       <div><strong>${target || "—"}</strong><span>fabbisogno</span></div>
-      <div><strong>${todayProtein()}</strong><span>proteine g</span></div>
+      <div><strong>${weightKg()} kg</strong><span>peso</span></div>
+    </div>
+    <div class="macros">
+      <article>
+        <strong>${haveP} / ${needP} g</strong>
+        <span>Proteine mangiate / da mangiare</span>
+      </article>
+      <article>
+        <strong>${haveC} / ${needC} g</strong>
+        <span>Carboidrati mangiati / da mangiare</span>
+      </article>
     </div>
     <h2 class="agenda-title">Parametri</h2>
     <div class="field-row">
@@ -1354,21 +1428,28 @@ function renderAlimentazione() {
       `).join("")}
     </div>
     <button class="btn ghost" data-act="save-nutrition" style="margin-bottom:22px">Salva parametri</button>
-    <h2 class="agenda-title">Chat pasti</h2>
-    <div class="chat-log" data-chat-log>
-      ${(n.chat || []).map((msg) => `
-        <div class="bubble ${msg.role === "user" ? "user" : "app"}">${esc(msg.text)}</div>
-      `).join("")}
-    </div>
+    <p class="eye" style="margin:8px 0">Sto aggiungendo a</p>
     <div class="chips">
-      <button data-act="food-example" data-text="80g pasta, 100g pollo, un’insalata, un cucchiaio d’olio">Esempio pranzo</button>
-      <button data-act="food-example" data-text="yogurt greco, una banana">Esempio spuntino</button>
+      ${["colazione", "pranzo", "cena"].map((slot) => `
+        <button data-act="meal-slot" data-slot="${slot}" aria-pressed="${ui.mealSlot === slot}">${slot}</button>
+      `).join("")}
     </div>
     <div class="composer">
       <label class="visually-hidden" for="food-in">Cosa hai mangiato</label>
-      <input id="food-in" type="text" maxlength="220" placeholder="es. 80g pasta, 1 mozzarella" value="${esc(ui.foodDraft || "")}" />
+      <input id="food-in" type="text" maxlength="220" placeholder="80g pasta, 100g pollo" value="${esc(ui.foodDraft || "")}" />
       <button class="btn primary" data-act="send-food">Calcola</button>
     </div>
+    ${renderMealSlot("colazione", "Colazione")}
+    ${renderMealSlot("pranzo", "Pranzo")}
+    ${renderMealSlot("cena", "Cena")}
+    ${(n.chat || []).length ? `
+      <h2 class="agenda-title">Note</h2>
+      <div class="chat-log" data-chat-log>
+        ${(n.chat || []).slice(-4).map((msg) => `
+          <div class="bubble ${msg.role === "user" ? "user" : "app"}">${esc(msg.text)}</div>
+        `).join("")}
+      </div>
+    ` : ""}
   `;
 }
 
@@ -1500,8 +1581,15 @@ document.getElementById("app").addEventListener("click", (event) => {
     render();
     return;
   }
-  if (act === "food-example") {
-    ui.foodDraft = btn.dataset.text;
+  if (act === "meal-slot") {
+    ui.mealSlot = btn.dataset.slot;
+    render();
+    return;
+  }
+  if (act === "del-meal") {
+    state.nutrition = nutrition();
+    state.nutrition.meals = (state.nutrition.meals || []).filter((item) => item.id !== btn.dataset.id);
+    saveState();
     render();
     return;
   }
@@ -1613,7 +1701,7 @@ document.getElementById("app").addEventListener("input", (event) => {
 });
 
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("./sw.js?v=16").catch(() => {});
+  navigator.serviceWorker.register("./sw.js?v=17").catch(() => {});
 }
 
 applyLook();
